@@ -13,8 +13,8 @@
 
 WiFiClient client;
 WiFiServer server(8080);         // creating server object with port number 8080
-String SSID = "sandy";           // router SSID
-String password = "1234098765";  // router password
+String SSID = "YOUR_SSID";           // router SSID
+String password = "YOUR_PASSWORD";  // router password
 
 char c;  // character to store incoming data from client
 String request;
@@ -33,8 +33,8 @@ void setup() {
 
   // Uncomment below commented code to configure your esp for static IP
   /*
-  IPAddress ip(192, 168, 43, 120);
-  IPAddress gateway(192, 168, 43, 1);
+  IPAddress ip(192, 168, 1, 120);
+  IPAddress gateway(192, 168, 1, 1);
   IPAddress subnet(255, 255, 255, 0);
   WiFi.config(ip, gateway, subnet);  // configure wi-fi for static IP address, gateway and subnet
 */
